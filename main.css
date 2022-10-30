@@ -1,0 +1,133 @@
+/* parametros geral da pagina */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }  
+  /*cor de fundo*/
+ body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+  }
+/* display flex = um elemento ao lado do outro */
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* colocando os links um ao lado do outro "inline"    */
+header li {
+        display:inline; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;  
+        margin-left: 16px;     
+    }
+/* cor dos links*/
+header li a{
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+    /*vai estilizar os itens na pagina, necessario criar uma div + class
+    atalho = .container + tab */
+.container {
+        width: 1366px;
+        margin: 0 auto;
+    }
+ 
+    /*cria uma div e insere os articles, flex-wrap pra quebrar a linha;
+    justify é pra deixar os elementos com o mesmo espaçamento  */
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between';
+        
+}
+/*ajustando as imagens limitando a altura a largura se ajusta automaticamente*/
+.articles article img {
+   /* height: 180px;*/
+   width: 90%;
+}
+/* limitando noticias por linha, ajuste feito na largura */
+.articles article {
+    width: 30%;
+}
+
+/*espaçamento das seções*/
+section{
+    padding: 16px 0;
+}
+
+/*margem inferior nos titulos das sections, article*/
+section h2, 
+.articles article{
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+}
+
+/*ficando com aparencia de botão */
+.articles article a{
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover{
+    text-decoration: underline;
+}
+
+/* mudando a fonte dos artigos, dos botoes */
+.articles article p, 
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* aumentando a font do titulo da noticia*/
+.articles article h3{
+    font-size: 24px;
+
+}
+/* titulo da seção*/
+section h2{
+    font-size: 32px;
+}
+
+/*cor de fundo nas section*/
+#sports{
+    background-color: rgba(0,255,0,0.1);
+}
+#sports .articles article a {
+    background-color: #009432;
+}
+
+/*seção de economia*/
+
+#economy{
+    background-color: rgba(255, 255, 170, 0.655);
+}
+
+#economy .articles article a{
+    background-color: #ff9f1a;
+}
+
+#Tecnologia{
+    background-color: #236bcf;
+}
+
+#Jornalismo {
+    background-color: rgb(220, 236, 245);
+}
+
+#Jornalismo .articles article a{
+    background-color: rgba(45, 136, 76, 0.607);
+}
